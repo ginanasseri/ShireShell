@@ -5,13 +5,9 @@
 
 ---
 
-A command-line shell that executes Unix commands.
+A command-line shell that executes Unix commands. [Note: Vagrant Shire was the name of the virtual environment set up for us due to COVID.]
 
-How to use: `gcc vsh.c -o vsh` then `./vsh`
-
-See `howto.txt` for redirecting input/output syntax.
-
-Note: Vagrant Shire was the name of the virtual environment we were using due to Covid.
+How to use: `gcc vsh.c -o vsh` then `./vsh` (See `howto.txt` for redirecting input/output syntax).
 
 The remainder of this README file describes the methods used to implement each feature.
 
