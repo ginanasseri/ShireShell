@@ -1,0 +1,19 @@
+Read From/Write To Syntax:
+
+Redirect output - use ::file.txt
+
+e.g., 
+
+    ls ::file.txt   [equivalent to ls > file.txt]
+
+Redirecting input - use file.txt::
+
+e.g., suppose file1.txt contains path to some working directory:
+
+    ls file1.txt::   [equivalent to ls < file1.txt]
+
+Combining both:
+
+    xargs ls file1.txt:: ::file2.txt  [equivalent to xargs ls < file1.txt > file2.txt]
+
+    (list of contents of directory in file1 are written to file2.txt)

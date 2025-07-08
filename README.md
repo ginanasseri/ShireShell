@@ -1,13 +1,19 @@
-# CSC 360, Summer 2021
-## Assignment #1 README NOTE: NOT RELATED TO CSH
+# Vagrant Shire Shell  
+## CSC 360, Summer 2021
 
-* Name: `Nasseri, Gina`
-* VNum: `V00799673`
-* Netlink: `gnasseri`
+* Author: `Nasseri, Gina`
 
 ---
 
-This README file describes the methods used to implement each feature in assignment 1.
+A command-line shell that executes Unix commands.
+
+How to use: `gcc vsh.c -o vsh` then `./vsh`
+
+See `howto.txt` for redirecting input/output syntax.
+
+Note: Vagrant Shire was the name of the virtual environment we were using due to Covid.
+
+The remainder of this README file describes the methods used to implement each feature.
 
 ---
 ### Preliminaries
