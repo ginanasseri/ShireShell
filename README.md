@@ -5,9 +5,17 @@
 
 ---
 
-A command-line shell that executes Unix commands. [Note: Vagrant Shire was the name of the virtual environment set up for us due to COVID.]
+A command-line shell that executes simple Unix commands with up to nine arguments. 
+[Note: Vagrant Shire was the name of the virtual environment set up for us due to COVID.]
 
 How to use: `gcc vsh.c -o vsh` then `./vsh` (See `howto.txt` for redirecting input/output syntax).
+
+Syntax rules: 
+* Redirect output to file: begin filename with `::`. E.g., `ls ::file.txt` (equvialent to `ls > file.txt`)
+* Redirect input from stdin: end filename with `::`. E.g., `ls file.txt::` (equivalent to `ls < file.txt`)
+* Combine both: `xargs ls file1.txt:: ::file2.txt` (equivalent to `xargs ls < file1.txt > file2.txt`)
+* To display time taken for command execution, end command with `##`
+
 
 The remainder of this README file describes the methods used to implement each feature.
 
